@@ -1,0 +1,80 @@
+body{
+	margin: 0;
+}
+
+h1 {
+	font-size: 2em;
+	color: #F2EF13;  
+}
+
+.header-contenedor {
+	width: 800px;
+	margin: auto;
+}
+
+.background {
+	background-image: url('../images/image.jpg'); 
+	background-size: cover;
+}
+
+.portada {
+
+  color: white;
+  padding: 20px;
+  height: 500px;
+}
+
+.menu {
+  font-size: 24px;
+  display: inline-flex;
+  position: relative;
+  right: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-top: -6px;
+  margin-left: 30px;
+}
+
+.menu li:before{
+  content: '∘';
+  font-size: 50px;
+  line-height: 20px;
+  color: white;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.avatar {
+  margin-top: 70px;
+  margin-left: 576px;
+}
+
+.avatar img {
+	border-radius: 200px;
+}
+
+
+.header {
+  position: relative;
+}
+
+.perfil {
+  margin-left: 556px;
+
+}
+
+.perfil h3 {
+	margin-left: 50px;
+
+}
+
+.perfil h2 {
+	position: initial;
+	margin-left: -32px;
+	color: #5193B4;
+}
