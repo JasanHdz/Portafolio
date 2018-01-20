@@ -2,6 +2,10 @@ body{
 	margin: 0;
 }
 
+div {
+	display: block;
+}
+
 h1 {
 	font-size: 2em;
 	color: #F2EF13;  
@@ -21,7 +25,7 @@ h1 {
 
   color: white;
   padding: 20px;
-  height: 500px;
+  height: 540px;
 }
 
 .menu {
@@ -83,10 +87,12 @@ h1 {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	padding: 0.5em;
 }
 
 .formacion p {
 	margin-left: 500px;
+	padding-top: 30px;
 }
 
 .formacion h2 {
@@ -133,5 +139,96 @@ h1 {
     border-bottom: 4px solid #2994B2;
     background-color: rgba(255,180,0,0.2);
     padding: 0.5em;
+	cursor: pointer;
+}
 
+.Portafolio-section {
+	background: #2994B2;
+}
+
+.section-title {
+	font-family: "Raleway",serif;
+    font-size: 2em;
+    text-align: center;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.PortafolioItem-img {
+	margin-left: 80px;
+}
+
+.PortafolioItem-info {
+	margin-left: 80px;
+	padding-bottom: 15px;
+}
+
+.header {
+  position: relative;
+}
+
+
+.footer {
+	background: #3d4950;
+    padding: 50px 10px;
+    background-size: cover;
+    color: #FFFBE0;
+    border-bottom: 2px solid #FFB400;
+    border-top: 2px solid #FFB400;
+    padding: 3em;
+    position: relative;
+}
+
+.footer .contenedor {
+	display: flex;
+  	justify-content: space-between;
+}
+
+.footer-column {
+	position: relative;
+    z-index: 2;
+}
+
+.footer-column-left {
+	text-align: center;
+}
+
+.footer-column-right{
+	color: #FFFBE0;
+    font-size: 1.5em;
+    text-decoration: none
+}
+
+.fa-github::before {
+    content: url(../icon/GitHub-Mark-32px.png);
+}
+
+.fa-twitter::before {
+	content: url(../icon/twitter.png); 
+}
+
+.fa-google::before {
+	content: url(../icon/google.png); 
+}
+
+.fa-correo::before {
+	content: url(../icon/gmail.png); 
+}
+
+.enlaces {
+	font-size: 24px;
+    display: inline-flex;
+    position: absolute;
+    right: 50px;
+}
+
+.enlaces li {
+	display: flow-root;
+    margin-top: -52px;
+    margin-left: 30px;
+}
+
+.enlaces a {
+	text-decoration: none;
+	color: #FFFBE0;
 }
