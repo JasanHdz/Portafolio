@@ -25,7 +25,7 @@ h1 {
 
   color: white;
   padding: 20px;
-  height: 540px;
+  height: 622px;
 }
 
 .menu {
@@ -54,7 +54,7 @@ h1 {
 }
 
 .avatar {
-  margin-top: 70px;
+  margin-top: 85px;
   margin-left: 576px;
 }
 
@@ -97,19 +97,20 @@ h1 {
 
 .formacion h2 {
 	margin-top: 65px;
-	margin-left: 632px;
+	text-align: center;
 	color: #474744;
 }
 
 .contenedor-edu {
 	background: #FFFBE0;
-	padding: auto;
+	padding-top: 1px;
+	padding-bottom: 50px;
 	
 }
 
 .formacion h3 {
 	margin-top: 40px;
-	margin-left: 660px;
+	text-align: center;
 }
 
 .edu-item {
