@@ -11,9 +11,14 @@ h1 {
 	color: #F2EF13;  
 }
 
-.header .contenedor {
+.header {
 	width: 800px;
 	margin: auto;
+}
+
+.contenedor {
+  width: auto;
+  max-width: 800px;
 }
 
 .background {
@@ -31,7 +36,7 @@ h1 {
 .menu {
   font-size: 24px;
   display: inline-flex;
-  position: relative;
+  margin-left: -225px;
   right: 0;
 }
 
@@ -55,43 +60,33 @@ h1 {
 
 .avatar {
   margin-top: 85px;
-  margin-left: 576px;
+  text-align: center;
 }
 
 .avatar img {
 	border-radius: 200px;
 }
 
-
 .header {
   position: relative;
 }
 
 .perfil {
-  margin-left: 556px;
-
-}
-
-.perfil h3 {
-	margin-left: 50px;
+  text-align: center;
 
 }
 
 .perfil h2 {
-	position: initial;
-	margin-left: -32px;
 	color: #5193B4;
 }
 
 .caja {
 	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	padding: 0.5em;
+  justify-content: center;
 }
 
 .formacion p {
-	margin-left: 500px;
+	text-align: center;
 	padding-top: 30px;
 }
 
@@ -129,22 +124,26 @@ h1 {
 }
 
 .carrera {
-    width: 500px;
-    height: 200px;
-    margin-right: 55px;
-    margin-left: 65px;
-    border: 1px solid #1F313C;
-    border-radius: 8px;
-    text-decoration: none;
-    color: #474744;
-    border-bottom: 4px solid #2994B2;
-    background-color: rgba(255,180,0,0.2);
-    padding: 0.5em;
-	cursor: pointer;
+  width: 500px;
+  height: 200px;
+  margin-top: 25px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border: 1px solid #1F313C;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #474744;
+  border-bottom: 4px solid #2994B2;
+  background-color: rgba(255,180,0,0.2);
+  padding: 0.5em;
+  cursor: pointer;
+  margin-bottom: 50px;
 }
 
 .Portafolio-section {
-	background: #2994B2;
+	background: #83d2a0;
+  padding-top: 1px;
+  padding-bottom: 20px;
 }
 
 .section-title {
@@ -157,8 +156,20 @@ h1 {
 
 .PortafolioItem-img {
 	margin-left: 80px;
+	margin-top: 20px;
+
 }
 
+.PortafolioItem-imgg {
+	margin-left: 70px;
+}
+
+.PortafolioItem{
+	display: inline-flex;
+    justify-content: baseline;
+    flex-wrap: wrap;
+    padding: 0.5em
+}
 .PortafolioItem-info {
 	margin-left: 80px;
 	padding-bottom: 15px;
@@ -170,24 +181,59 @@ h1 {
 
 
 .footer {
-	background: #3d4950;
-    padding: 50px 10px;
-    background-size: cover;
-    color: #FFFBE0;
-    border-bottom: 2px solid #FFB400;
-    border-top: 2px solid #FFB400;
-    padding: 3em;
-    position: relative;
+	background: #524040;
+  padding: 50px 10px 0px;
+  background-size: cover;
+  color: #FFFBE0;
+  border-bottom: 2px solid #FFB400;
+  border-top: 2px solid #FFB400;
+  position: relative;
 }
 
 .footer .contenedor {
 	display: flex;
-  	justify-content: space-between;
+  justify-content: space-between;
 }
 
 .footer-column {
 	position: relative;
-    z-index: 2;
+  z-index: 2;
+}
+
+.footer-column-left {
+  margin-left: 80px;
+  margin-right: 40px;
+  margin-top: 40px;
+}
+
+.formulario {
+  display: flex;
+  color: white;
+  margin-top: -30px;
+}
+
+
+.col1, .col2 {
+  display: flex;
+  flex-direction: column;  
+  margin-top: 20px;
+}
+
+.col1 {
+  margin-right: 15px;
+}
+.col2 {
+  align-items: flex-start;
+}
+
+.contacto {
+  display: flow-root;
+  width: 300px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 130px;
+  margin-right: 80px;
+  text-align: center;
 }
 
 .footer-column-left {
@@ -217,19 +263,57 @@ h1 {
 }
 
 .enlaces {
-	font-size: 24px;
-    display: inline-flex;
-    position: absolute;
-    right: 50px;
+	font-size: 22px;
+  display: inline-flex;
+  text-align: center;
+  margin-top: -4px;
+  margin-bottom: 10px;
 }
 
 .enlaces li {
 	display: flow-root;
-    margin-top: -52px;
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
 .enlaces a {
 	text-decoration: none;
 	color: #FFFBE0;
+}
+
+
+@media screen and (max-width:800px) {
+
+.perfil {
+  width: auto;
+  max-width: 800px;
+  margin-left: auto;
+  text-align: center;
+}
+
+.enlaces {
+    font-size: 20px;
+    display: inline-flex;
+    position: absolute;
+    margin-top: 50px;
+    margin-right: 70px;
+}
+.enlaces li{
+    display: initial;
+    margin-left: 25px;
+}
+
+.edu-item {
+  margin: 0;
+}
+.caja{
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.carrera {
+  height: auto;
+  padding: 0;
+}
+
 }
