@@ -414,3 +414,29 @@ textarea {
     width: 380px;
   }
 }
+
+@media screen and (max-width: 680px) {
+  
+  .menu li {
+    margin-left: 15px;
+  }
+  .caja {
+    margin-left: 90px;
+  }
+
+  .footer-column-left {
+    text-align: center;
+    margin-left: 20px;
+  }
+  .enlaces li {
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 1px;
+    margin-left: 50px;
+  }
+
+  .fa {
+    margin-left: 7px;
+    margin-top: -7px;
+  }
+}
