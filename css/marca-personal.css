@@ -7,7 +7,7 @@ div {
 }
 
 h1 {
-	font-size: 2em;
+	font-size: 32px;
 	color: #F2EF13;  
 }
 
@@ -295,10 +295,6 @@ textarea {
     margin-left: 60px;
   }
   
-  .menu li {
-    border-left: solid white;
-  }
-
   /*--Footer--*/
   .footer-column-left {
       margin-left: 15px;
@@ -440,3 +436,44 @@ textarea {
     margin-top: -7px;
   }
 }
+
+@media screen and (max-width: 630px) {
+  
+  .menu {
+    display: block;
+    font-size: 25px;
+  }
+
+  .menu li {
+    display: block;
+    text-align: center;
+    margin: 0;
+    border-bottom: solid white;
+    padding: 6px;
+  }
+  
+  .menu li:first-child {
+    border-top: solid;
+  }
+
+  .menu li:before{
+  content: none;
+  }
+  
+  .avatar {
+    margin-top: 60px;
+  }
+
+  .caja {
+    margin: 0;
+    margin-left: 4px;
+    margin-left: 42px;
+  }
+
+  @media screen and (max-width: 530px) {
+    
+    .carrera {
+      width: 380px;
+
+    }
+  }
