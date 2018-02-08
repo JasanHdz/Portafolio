@@ -314,9 +314,6 @@ textarea {
 
 @media screen and (max-width: 800px){
   
-  body {
-    border: solid red;
-  }
   .menu {
     margin: 0px;
   }
@@ -466,8 +463,8 @@ textarea {
 
   .caja {
     margin: 0;
-    margin-left: 4px;
     margin-left: 42px;
+    margin-left: 50px;
   }
 
   @media screen and (max-width: 530px) {
@@ -476,4 +473,135 @@ textarea {
       width: 380px;
 
     }
+  }
+
+  @media screen and (max-width: 500px) {
+    
+    .carrera {
+      width: 300px;
+      font-size: 14px
+
+    }
+
+    .edu-item {
+      margin-left: 100px;
+    }
+
+    .PortafolioItem-img {
+    margin-left: 50px;
+    margin-top: 5px;
+    width: 360px;
+    }
+
+    .PortafolioItem-imgg {
+    margin-left: 45px;
+    width: 360px;
+  }
+
+  .PortafolioItem-info {
+    margin-left: 52px;
+  }
+
+  /*----Footer----*/
+
+  .formulario{
+    margin-left: 55px;
+
+  }
+  
+  .footer-column-left {
+    text-align: center;
+    margin-left: -12px
+  }
+  
+  .contacto {
+    width: 290px;
+    margin-top: 15px;
+  }
+
+  .enlaces li {
+    margin-left: 20px;
+  }
+
+  textarea {
+    width: 300px;
+  }
+
+  /*----Footer----*/
+  }
+
+  @media screen and (max-width: 450px) {
+  
+  .caja {
+    margin: 0;
+  }
+
+  .PortafolioItem-img {
+    margin-left: 35px;
+    width: 300px;
+    }
+
+    .PortafolioItem-imgg {
+    margin-left: 40px;
+    width: 300px;
+  }
+
+    .PortafolioItem-info {
+    font-size: 14px;
+  }
+  }
+
+  @media screen and (max-width: 350px) {
+  
+  .portada {
+    padding-bottom: 40px;
+  }
+
+   .avatar {
+    margin-right: 2px;
+   }   
+  
+    .menu {
+      font-size: 20px;
+    }
+  
+  .perfil {
+    margin-left: 22px;
+  }
+
+  .formacion {
+    font-size: 15px;
+  }
+
+  .carrera {
+    width: 250px;
+  }
+
+  .edu-item {
+    margin-left: 62px;
+  }
+
+  .PortafolioItem-img {
+    width: 225px;
+    margin-left: 27px;
+  }
+  .PortafolioItem-imgg {
+    width: 220px;
+    margin-left: 25px;
+  }
+
+  .Portafolio-section {
+    font-size: 12px;
+  }
+  
+  .formulario {
+    margin-left: 10px;
+  }
+  
+  textarea {
+    width: 265px;
+  }
+    .enlaces li {
+      margin-left: -23px;
+  }
   }
