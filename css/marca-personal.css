@@ -291,6 +291,18 @@ textarea {
   text-align: center;
 }
 
+.button {
+  border-radius: 12px;
+  border: none;
+  color: white;
+  padding: 7px 12px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 18px;
+  background: #fd324e;
+  background: linear-gradient(to left, #fe344e, #ff7250);
+}
+
 .footer-column-left {
 	text-align: center;
 }
@@ -389,6 +401,16 @@ textarea {
     margin-top: 40px;
   }
   
+  input [type="text"]{
+    margin-bottom: 25px;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    font-size: 16px;
+    padding: 5px;
+  }
+
   .contacto {
     display: inline-block;
     margin-left: -175px;
@@ -575,6 +597,10 @@ textarea {
       width: auto;
       flex: 1;
       margin-left: -40px;
+    }
+
+    .col2 {
+      align-items: stretch;
     }
 
     .carrera {
