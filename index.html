@@ -48,12 +48,12 @@
 				<div class="caja">
 				<div class="carrera">
 					<a href="https://platzi.com/arquitecto/" target="_blank" ></a>
-						<img class="edu-item" src="images/golden_frontend2x.png" alt="iconFrontend">
+						<img class="edu-item" data-src="images/golden_frontend2x.png" alt="iconFrontend">
 						<p>Carrera de Arquitecto Frontend - Platzi(Actualmente)</p>
 				</div>
 				<div class="carrera">
 					<a href="https://platzi.com/arquitecto/" target="_blank" ></a>
-						<img class="edu-item" src="images/javascript.jpg" alt="iconFrontend">
+						<img class="edu-item" data-src="images/javascript.jpg" alt="iconFrontend">
 						<p>Carrera de Desarrollo JavaScript - Platzi(Actualmente)</p>
 				</div>
 				</div>
@@ -62,7 +62,7 @@
 				<h2 class="section-title">Portafolio</h2>
 		<section class="Portafolio-list">
 			<div class="PortafolioItem">
-					<img class="PortafolioItem-img" src="images/trigoFacil.jpg" width="383" height="196">
+					<img class="PortafolioItem-img" data-src="images/trigoFacil.jpg" width="383" height="196">
 				<div class="PortafolioItem-info">
 					<h3>TrigoFácil</h3>
 					<p class="Portafolio-text">
@@ -87,7 +87,7 @@
 					</p>
 				</div>
 				<div class="PortafolioItem">
-					<img class="PortafolioItem-imgg" src="images/certificacion git.jpg" width="383" height="196">
+					<img class="PortafolioItem-imgg" data-src="images/certificacion git.jpg" width="383" height="196">
 				<div class="PortafolioItem-info">
 					<h3>Certificación: Git y GitHub</h3>
 					<p class="Portafolio-text">
@@ -151,6 +151,7 @@
 				</div>
 		</footer>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 		<script type="text/javascript">
 			var bLazy = new Blazy({
 			    // options
@@ -164,7 +165,15 @@
 			var $burgerButton = document.getElementById('burger-button');
 			var $menu = document.getElementById('menu');
 			function toggleMenu(){
-				$menu.classList.toggle('active')
+				$menu.classList.toggle('active');
+			};
+
+			function showMenu(){
+				$menu.classList.add('active');
+			};
+
+			function hideMenu(){
+				$menu.classList.remove('active');
 			};
 
 			function mediaQuery(){
@@ -182,6 +191,11 @@
 
 			// $burgerButton.addEventListener('touchstart', toggleMenu); 
 			
+			//Gestos Touch
+			var $body = document.body;
+			var gestos = new Hammer($body);
+			gestos.on('swipeleft', hideMenu);
+			gestos.on('swiperight', showMenu);
 		</script>
 		<!-- <link rel="stylesheet" type="text/css" href="css/marca.min.css"/> -->
 		<link rel="stylesheet" type="text/css" href="css/marca-personal.css"/>	

@@ -490,11 +490,12 @@ textarea {
   text-align: center;
   display: inline-block;
   background: #51524c;
-  position: absolute;
+  position: fixed;
   left: 20px;
   top: 20px;
   cursor: pointer;
   z-index: 3;
+  display: none;
 }
 
 @media screen and (max-width: 630px) {
@@ -544,9 +545,13 @@ textarea {
       position: static;
     }
     
+    .burger-button {
+      display: block;
+    }
+
     .menu {
       background: rgba(255, 60, 88, .8);
-      position: absolute;
+      position: fixed;
       left: -100%;
       width: 100%;
       top: 0;
@@ -560,6 +565,10 @@ textarea {
 
     .menu.active {
       left: 0;
+    }
+  
+    .menu li {
+      padding: 14px;
     }
 
     .menu ul {
