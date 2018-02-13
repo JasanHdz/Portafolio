@@ -570,6 +570,10 @@ textarea {
     .burger-button {
       display: block;
     }
+    
+    .button {
+      margin-right: 21px;
+    }
 
     .menu {
       background: rgba(255, 60, 88, .8);
